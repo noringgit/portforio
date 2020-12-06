@@ -1,92 +1,273 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>portfolio</title>
-<link href="../../_common/images/favicon.ico" rel="shortcut icon">
-<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Noriko Fuse's portfolio</title>
+    <!-- bootstrap読み込み -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
 
-<body>
-<header>
-	<div class="container">
-		<h1>my portfolio</h1>
-		<h2>はじめまして</h2>
-		<p>ご覧いただき、ありがとうございます。ポートフォリオのページです。随時更新していきます。</p>
-		</div><!-- /.container -->
-</header>
-<main>
-	<div class="container">
-		<section>
+  <body>
+    <!-- ナビバー -->
+    <header>
+      <nav class="navbar">
+        <div class="text-center logo">Noriko Fuse's portfolio</div>
+      </nav>
+    </header>
 
-			<div class="start">
-				<h2 class="waku">はじめに</h2>
-					<p>事務職のときCADを使ったときからPCが面白くなり、WEBのお仕事をするようになりました。</p>
-					<p>転居と子育ての為、約7年ぶりに仕事に復帰する際、時短のDTPを選びました。<br>スマホが普及したりとwebの世界は激変しており、ギャップを埋めるのには時間がかかり、当時は子供が小さく、フルタイムや残業が難しかったためです。</p>
-					<p>2020年7月よりご縁がありまして、現在は就職支援学校のwebプログラマー養成科に通っています。<br>HTML/CSS、JavaScript、PHP、MySQL、access、Javaを勉強中です。<br>難しいですが、とても楽しく学んでいます。</p>
-					
-				<h2 class="waku">仕事で大切にしていること</h2>
-					<p>いつでも話ができる環境作りが大切だと思っています。<br>進捗の情報共有はもちろんつまづいたときに相談ができるような関係をつくるようにしています。<br></p>
-				
-				<h2 class="waku">今後やっていきたいこと・目標</h2>
-					<p>PHPとMySQLが楽しくなってきましたので、phpをはじめとしたバックエンドにも知識を広げていきたいと思っています。<br>
-					年内にPHP初級認定試験を取得すべく勉強中です。</p>
-					<p></p>
+    <!-- 内容 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <!-- works -->
+          <h2 class="text-center">Works</h2>     
 
-			</div>
+          <!-- Photostock紹介 -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
 
-			<div>
-				<h2>作品</h2>
-					<p>就職支援学校で作成した課題をブラッシュアップしました。</p>
-					<p></p>
-				<div class="menu">
-					<ul>
-						<h3>HTML/CSS</h3>
-						<li class="work"><img src="images/sakuhin_h.png"></li>
-						<h3>JavaScript</h3>
-						<li class="work"><img src="images/sakuhin_h.png"></li>
-						<h3>PHP</h3>
-						<li class="work"><img src="images/sakuhin_h.png"></li>
-						<h3>Java</h3>
-						<li class="work"><img src="images/sakuhin_h.png"></li>
-					</ul>
-				</div>
-			</div>
+              <!-- タイトル -->
+              <h4>Photostock（写真素材サイト）</h4>
+              <div>2020.8 レスポンシブwebデザインサイト</div>
+
+              <!-- カルーセル -->
+              <div id="micro_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#micro_carousel" data-slide-to="0"></li>
+                  <li data-target="#micro_carousel" data-slide-to="1"></li>
+                  <li data-target="#micro_carousel" data-slide-to="2"></li>
+                  <li data-target="#micro_carousel" data-slide-to="3"></li>
+                  <li data-target="#micro_carousel" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/micro_top.png" alt="トップページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_user.png" alt="ユーザページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_users.png" alt="ユーザ一覧" class="img">
+                  </div>
+                  <div class="item">
+                      <img src="images/micro_post.png" alt="投稿" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_comment.png" alt="コメント" class="img">
+                  </div>
+                </div>
+
+                <a class="left carousel-control" href="#micro_carousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">前へ</span>
+                </a>
+                <a class="right carousel-control" href="#micro_carousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">次へ</span>
+                </a>
+              </div>
+              
+              <!-- 詳細 -->
+              <div class="row">
+                <dl class="col-sm-3">
+                  <dt>作品名</dt>
+                  <dd>Photostock</dd>
+                  <dt>開発期間</dt>
+                  <dd>15時間程</dd>
+                  <dt>担当範囲</dt>
+                  <dd>すべて</dd>
+                </dl>
+                <dl class="col-sm-9">
+                  <dt>説明</dt>
+                  <dd>職業訓練校の課題として制作。<br>（サイズ変更以外の）画像制作は行わず、webフォント、フリー素材のみを使用。<br>
+                    計画の詰め不足で一部機能しか作れなかったことが反省点ですが、初めてふんだんに画像を使えるページを作ることができ、表現の幅が広がり楽しかったです。<br>
+                   今後JavaScript、MySQL、PHPを学習予定ですので、ログイン、カート等を実装し、最終的には写真販売サイトに改修します。
+                  </dd>
+                  <dt>機能</dt>
+                  <dd>ハンバーガーメニュー / flexbox / float / レスポンシブwebデザイン</dd>
+                  <dt>技術・使用ソフト</dt>
+                  <dd>html / css / photoshop</dd>
+                  <dt>URL</dt>
+                  <dd>
+                    <a href="https://noringgit.github.io/web06/index.html" target="_blank">https://noringgit.github.io/web06/index.html</a>
+                    <br>
+                  </dd>
+                </dl>
+              </div> 
+
+            </div>  
+          </div> 
+
+          <!-- Javascript作品 -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+              <!-- タイトル -->
+              <h4>Javascript作品（ランダムカラーアニメーション）</h4>
+              <div>2020.9 Javascript</div>
+
+              <!-- カルーセル -->
+              <div id="jiyu_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#jiyu_carousel" data-slide-to="0"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="1"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="2"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="3"></li>
+                  <li data-target="#jiyu_carousel" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/jiyu_top.png" alt="トップページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_main.png" alt="報告会一覧ページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_present.png" alt="報告内容一覧ページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_form2.png" alt="アンケートの回答ページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/jiyu_owner.png" alt="アンケート集計ページ" class="img">
+                  </div>
+                </div>
+
+                <a class="left carousel-control" href="#jiyu_carousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">前へ</span>
+                </a>
+                <a class="right carousel-control" href="#jiyu_carousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">次へ</span>
+                </a>
+              </div>
+              
+              <!-- 詳細 -->
+              <div class="row">
+                <dl class="col-sm-3">
+                  <dt>作品名</dt>
+                  <dd>ランダムカラーアニメーション</dd>
+                  <dt>開発開始</dt>
+                  <dd>2020.9</dd>
+                  <dt>担当範囲</dt>
+                  <dd>すべて</dd>
+                </dl>
+                <dl class="col-sm-9">
+                  <dt>説明</dt>
+                  <dd>メニューバー下部にあるアニメーション表示部分です。<br>写真画像より色を抽出し、20色表示させています。canvas機能を使い同ページの写真を縮小したものから色を抽出し、被らないようにランダムに20色セレクトし、アニメーション表示させています。</dd>
+                  <dt>機能</dt>
+                  <dd></dd>
+                  <dt>技術・使用ソフト</dt>
+                  <dd>html / css / JavaScript</dd>
+                  <dt>URL</dt>
+                  <dd><a href="https://noringgit.github.io/web06/landscape/l_1.html" target="_blank">https://noringgit.github.io/web06/landscape/l_1.html</a></dd>
+                </dl>
+              </div>   
+
+            </div>
+          </div>
 
 
+          <!-- Photostock紹介 -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
 
-<div class="bg">12121212121</div>
+              <!-- タイトル -->
+              <h4>MiniBBS（（仮）ひとこと掲示板）</h4>
+              <div>2020.12 制作中 HTML/CSS/PHP/MySQL</div>
 
+              <!-- カルーセル -->
+              <div id="micro_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                  <li class="active" data-target="#micro_carousel" data-slide-to="0"></li>
+                  <li data-target="#micro_carousel" data-slide-to="1"></li>
+                  <li data-target="#micro_carousel" data-slide-to="2"></li>
+                  <li data-target="#micro_carousel" data-slide-to="3"></li>
+                  <li data-target="#micro_carousel" data-slide-to="4"></li>
+                </ol>
 
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/micro_top.png" alt="トップページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_user.png" alt="ユーザページ" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_users.png" alt="ユーザ一覧" class="img">
+                  </div>
+                  <div class="item">
+                      <img src="images/micro_post.png" alt="投稿" class="img">
+                  </div>
+                  <div class="item">
+                    <img src="images/micro_comment.png" alt="コメント" class="img">
+                  </div>
+                </div>
 
+                <a class="left carousel-control" href="#micro_carousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">前へ</span>
+                </a>
+                <a class="right carousel-control" href="#micro_carousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">次へ</span>
+                </a>
+              </div>
+              
+              <!-- 詳細 -->
+              <div class="row">
+                <dl class="col-sm-3">
+                  <dt>作品名</dt>
+                  <dd>MiniBBS（仮）</dd>
+                  <dt>開発期間</dt>
+                  <dd>--時間程</dd>
+                  <dt>担当範囲</dt>
+                  <dd>すべて</dd>
+                </dl>
+                <dl class="col-sm-9">
+                  <dt>説明</dt>
+                  <dd>今現在でできるPHPアプリの集大成として作成中。<br>ユーザー登録機能とログイン機能、登録記事にレスがつくようにつくっています。<br>
+                  </dd>
+                  <dt>機能</dt>
+                  <dd>ユーザー登録 / ログイン / 投稿 / 投稿にコメント /レスポンシブwebデザイン</dd>
+                  <dt>技術・使用ソフト</dt>
+                  <dd>HTML/CSS/PHP/MySQL</dd>
+                  <dt>URL</dt>
+                  <dd>
+                    <a href="#">https://---</a>
+                    <br>
+                  </dd>
+                </dl>
+              </div> 
 
+            </div>  
+          </div>
+          <!-- profile -->
+          <div class="text-center">
+            <h2>About me</h2>
+        
+            <!-- <div class="text-center">プロフィール写真</div> -->
+            <h4 style="margin-bottom: 10px;">Noriko Fuse</h4>
+            <div>ものを作ったり見たりすることが大好きです。今はPHPとDBでアプリを少しずつ作っています。<br>静的なものを作ることが多かったので、新鮮で楽しいです。</div>
+            <br>
+            <dl>
+              <dt>スキル</dt>
+              <dd>html / css / photoshop / illustrator / JavaScript（勉強中）/ PHP（勉強中）/ MySQL（勉強中）/ JAVA（勉強中）</dd>
+              <dt>特技・趣味</dt>
+              <dd>裁縫 / ゲーム / 体を動かすこと</dd>
+            </dl>
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		</section>
-	</div><!-- /.container -->
-</main>
-
-<footer>
-	<div class="container">
-	<p>JavaScript Samples</p>
-	</div><!-- /.container -->
-</footer>
-<script src="script.js"></script>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
